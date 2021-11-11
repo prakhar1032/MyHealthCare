@@ -1,7 +1,8 @@
-package com.care.myhealthcare
+package com.care.myhealthcare.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.care.myhealthcare.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
