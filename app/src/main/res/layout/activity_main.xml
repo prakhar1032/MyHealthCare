@@ -10,4 +10,7 @@
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
+
+
+
 </LinearLayout>
