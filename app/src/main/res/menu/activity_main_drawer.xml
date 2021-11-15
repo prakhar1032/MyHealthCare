@@ -9,9 +9,16 @@
             android:title="My Profile" />
 
         <item
+            android:id="@+id/nav_healthnews"
+            android:icon="@drawable/ic_nav_news"
+            android:title="Health News" />
+
+        <item
             android:id="@+id/nav_sign_out"
             android:icon="@drawable/ic_nav_sign_out"
             android:title="Sign Out" />
+
+
     </group>
 </menu>
 <!--END-->

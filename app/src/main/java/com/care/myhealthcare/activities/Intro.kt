@@ -7,7 +7,7 @@ import android.view.WindowManager
 import com.care.myhealthcare.R
 import kotlinx.android.synthetic.main.activity_intro.*
 
-class Intro : BaseActivity() {
+class Intro : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)
