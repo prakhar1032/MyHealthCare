@@ -3,18 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.37864583333333335" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/drawable/ic_action_add_24dp.xml" value="0.3828125" />
         <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/drawable/ic_action_navigation_menu.xml" value="0.3828125" />
         <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/drawable/ic_black_color_back_24dp.xml" value="0.3828125" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/drawable/ic_nav_news.xml" value="0.3828125" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/drawable/ic_white_color_back_24dp.xml" value="0.3828125" />
         <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/drawable/nav_header_main_background.xml" value="0.3828125" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/drawable/shape_button_rounded.xml" value="0.3828125" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/drawable/shape_image_view_border.xml" value="0.3828125" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/activity_add_patient_details.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/activity_health_news.xml" value="0.36666666666666664" />
-        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/activity_intro.xml" value="0.264" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/activity_my_profile.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/activity_sign_in.xml" value="0.36666666666666664" />
-        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/app_bar_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/activity_web.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/app_bar_main.xml" value="0.4" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/content_main.xml" value="0.4" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/dashboard_items.xml" value="0.3625" />
         <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/dialog_progress.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/display_news.xml" value="0.33" />
         <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/layout/nav_header_main.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/HealthCare/app/src/main/res/xml/network_security_config.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidProjects/MyHealthCare/app/src/main/res/drawable/ic_black_color_back_24dp.xml" value="0.3828125" />
         <entry key="..\:/AndroidProjects/MyHealthCare/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/AndroidProjects/MyHealthCare/app/src/main/res/drawable/item_circular_color_accent_background.xml" value="0.3828125" />

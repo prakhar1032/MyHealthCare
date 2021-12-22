@@ -15,15 +15,30 @@
         android:theme="@style/Theme.MyHealthCare"
         android:usesCleartextTraffic="true">
 
+
+        <activity
+            android:name=".activities.MyProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name=".activities.AddPatientDetails"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
         <activity
             android:name=".activities.HealthNews"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
 
         <activity
             android:name=".api.web"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
 
         <activity
             android:name=".activities.SignUp"
@@ -40,9 +55,7 @@
         <activity
             android:name=".activities.Intro"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Design.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.Design.NoActionBar" />
 
         <activity
             android:name=".activities.SplashActivity"

@@ -1,8 +1,11 @@
 package com.care.myhealthcare.firebase
 
+import android.app.Activity
 import android.util.Log
+import com.care.myhealthcare.activities.MainActivity
 import com.care.myhealthcare.activities.SignIn
 import com.care.myhealthcare.activities.SignUp
+import com.care.myhealthcare.model.User
 import com.care.myhealthcare.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -42,7 +45,7 @@ class FirestoreClass {
     /**
      * A function to SignIn using firebase and get the user details from Firestore Database.
      */
-    fun signInUser(activity: SignIn) {
+    fun signInUser(activity: Activity) {
 
         // Here we pass the collection name from which we wants the data.
         mFireStore.collection(Constants.USERS)
@@ -50,19 +53,39 @@ class FirestoreClass {
             .document(getCurrentUserID())
             .get()
             .addOnSuccessListener { document ->
-//                Log.e(
-//                    activity.javaClass.simpleName, document.toString()
-//                )
+                Log.e(activity.javaClass.simpleName, document.toString())
 
-                // TODO (STEP 3: Pass the result to base activity.)
-                // START
                 // Here we have received the document snapshot which is converted into the User Data model object.
-                val loggedInUser = document.toObject(com.care.myhealthcare.model.User::class.java)
-                if (loggedInUser != null)
-                    activity.signInSuccess(loggedInUser)
+                val loggedInUser = document.toObject(User::class.java)!!
+
+                // TODO(Step 6: Modify the parameter and check the instance of activity and send the success result to it.)
+                // START
+                // Here call a function of base activity for transferring the result to it.
+                when (activity) {
+                    is SignIn-> {
+                        activity.signInSuccess(loggedInUser)
+                    }
+                    is MainActivity -> {
+                        activity.updateNavigationUserDetails(loggedInUser)
+                    }
+                    // END
+                }
                 // END
             }
             .addOnFailureListener { e ->
+                // TODO(Step 2: Hide the progress dialog in failure function based on instance of activity.)
+                // START
+                // Here call a function of base activity for transferring the result to it.
+                when (activity) {
+                    is SignIn -> {
+                        activity.hideProgressDialog()
+                    }
+                    is MainActivity -> {
+                        activity.hideProgressDialog()
+                    }
+                    // END
+                }
+                // END
                 Log.e(
                     activity.javaClass.simpleName,
                     "Error while getting loggedIn user details",

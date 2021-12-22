@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.care.myhealthcare.R
 import com.care.myhealthcare.api.*
+import kotlinx.android.synthetic.main.activity_health_news.*
+import kotlinx.android.synthetic.main.activity_my_profile.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -23,7 +25,27 @@ class HealthNews : AppCompatActivity(),Listener {
         setContentView(R.layout.activity_health_news)
         setUpUi()
         fetchData()
+        setupActionBar()
     }
+
+    // START
+    /**
+     * A function to setup action bar
+     */
+    private fun setupActionBar() {
+
+        setSupportActionBar(toolbar_health_news)
+
+        val actionBar = supportActionBar
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true)
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_white_color_back_24dp)
+            actionBar.title ="Health News"
+        }
+
+        toolbar_health_news.setNavigationOnClickListener { onBackPressed() }
+    }
+    // END
     private fun setUpUi() {
         recyclerView=findViewById(R.id.recyclerView)
         newsAdapter= NewsAdapter(this,ArrayList<Article>(),this)

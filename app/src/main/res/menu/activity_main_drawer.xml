@@ -8,10 +8,15 @@
             android:icon="@drawable/ic_nav_user"
             android:title="My Profile" />
 
+<!--        <item-->
+<!--            android:id="@+id/nav_healthnews"-->
+<!--            android:icon="@drawable/ic_nav_news"-->
+<!--            android:title="Health News" />-->
+
         <item
-            android:id="@+id/nav_healthnews"
-            android:icon="@drawable/ic_nav_news"
-            android:title="Health News" />
+            android:id="@+id/Contact_Us"
+            android:icon="@drawable/ic_contact_us"
+            android:title="Contact Us"/>
 
         <item
             android:id="@+id/nav_sign_out"

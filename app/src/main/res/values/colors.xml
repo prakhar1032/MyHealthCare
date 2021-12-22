@@ -10,7 +10,11 @@
 <!--    <color name="colorAccent">#FFFCFC</color>-->
 
     <color name="colorPrimary">#0BCE83</color>
-    <color name="colorPrimaryDark">#B2212121</color>
+    <color name="colorPrimaryDark">#A259FF</color>
     <color name="colorAccent">#FFFCFC</color>
     <color name="snackbar_error_color">#F72400</color>
+    <color name="primary_text_color">#212121</color>
+    <color name="secondary_text_color">#9AA2AF</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="shimmer_color">#dddddd</color>
 </resources>

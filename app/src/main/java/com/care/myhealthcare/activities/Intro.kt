@@ -26,7 +26,7 @@ class Intro : AppCompatActivity() {
             startActivity(intent)
         }
 
-        skip.setOnClickListener {
+        Skip.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
