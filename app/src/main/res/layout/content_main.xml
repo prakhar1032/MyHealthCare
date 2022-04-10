@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,7 +13,7 @@
         android:layout_height="match_parent"
         android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp" >
+        android:layout_marginEnd="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,11 +65,11 @@
                 android:layout_gravity="center"
                 android:layout_margin="30dp"
                 android:background="@color/white_color"
-                android:elevation="10dp"
-                app:cardCornerRadius="50dp"
-                app:cardElevation="2dp"
                 android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground">
+                android:elevation="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -100,11 +99,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/medication_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="30dp"
                 android:background="@color/white_color"
+                android:clickable="true"
                 android:elevation="10dp"
                 app:cardCornerRadius="50dp"
                 app:cardElevation="2dp">
@@ -137,11 +138,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/diseases_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="30dp"
                 android:background="@color/white_color"
+                android:clickable="true"
                 android:elevation="10dp"
                 app:cardCornerRadius="50dp"
                 app:cardElevation="2dp">
@@ -156,8 +159,8 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
-                        android:src="@drawable/diseases"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:src="@drawable/diseases" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -193,8 +196,8 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
-                        android:src="@drawable/doctors"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:src="@drawable/doctors" />
 
                     <TextView
                         android:layout_width="match_parent"

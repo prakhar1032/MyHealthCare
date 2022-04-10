@@ -6,16 +6,15 @@ import android.view.MenuItem
 import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.bumptech.glide.Glide
 import com.care.myhealthcare.R
+import com.care.myhealthcare.diseases.DiseasesActivity
 import com.care.myhealthcare.firebase.FirestoreClass
+import com.care.myhealthcare.medication.MedicationActivity
 import com.care.myhealthcare.model.User
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_intro.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -43,6 +42,14 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
         health_news.setOnClickListener {
             startActivity(Intent(this,HealthNews::class.java))
+        }
+
+        medication_activity.setOnClickListener {
+            startActivity(Intent(this, MedicationActivity::class.java))
+        }
+
+        diseases_activity.setOnClickListener {
+            startActivity(Intent(this, DiseasesActivity::class.java))
         }
 
     }

@@ -20,6 +20,7 @@ class Intro : AppCompatActivity() {
         signin.setOnClickListener {
             val intent = Intent(this, SignIn::class.java)
             startActivity(intent)
+            finish()
         }
         signup.setOnClickListener {
             val intent = Intent(this, SignUp::class.java)

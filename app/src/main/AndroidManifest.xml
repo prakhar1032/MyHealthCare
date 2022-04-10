@@ -14,49 +14,60 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHealthCare"
         android:usesCleartextTraffic="true">
-
-
+        <activity
+            android:name=".diseases.DiseasesForm"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar"/>
+        <activity
+            android:name=".diseases.DiseasesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".medication.MedicationForm"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".medication.MedicationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
         <activity
             android:name=".activities.MyProfileActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar" />
-
         <activity
             android:name=".activities.AddPatientDetails"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar" />
-
         <activity
             android:name=".activities.HealthNews"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar" />
-
         <activity
             android:name=".api.web"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar" />
-
         <activity
             android:name=".activities.SignUp"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar" />
-
         <activity
             android:name=".activities.SignIn"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar" />
-
         <activity
             android:name=".activities.Intro"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar" />
-
         <activity
             android:name=".activities.SplashActivity"
             android:screenOrientation="portrait"
@@ -67,7 +78,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activities.MainActivity"
             android:exported="true"
