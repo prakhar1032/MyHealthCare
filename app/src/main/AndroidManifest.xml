@@ -15,15 +15,18 @@
         android:theme="@style/Theme.MyHealthCare"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".diseases.DeleteAndUpdateDiseases"
+            android:exported="false" />
+        <activity
             android:name=".diseases.DiseasesForm"
-            android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Design.NoActionBar"/>
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".diseases.DiseasesActivity"
-            android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Design.NoActionBar" />
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".medication.MedicationForm"
             android:exported="false"

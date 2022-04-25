@@ -7,8 +7,12 @@ import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.GravityCompat
+import androidx.room.Room
 import com.bumptech.glide.Glide
 import com.care.myhealthcare.R
+import com.care.myhealthcare.diseases.DiseaseDatabase
+import com.care.myhealthcare.diseases.DiseaseInfo
+import com.care.myhealthcare.diseases.DiseaseObject
 import com.care.myhealthcare.diseases.DiseasesActivity
 import com.care.myhealthcare.firebase.FirestoreClass
 import com.care.myhealthcare.medication.MedicationActivity
@@ -18,15 +22,22 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 
 class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
-
+  private lateinit var database : DiseaseDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        database = Room.databaseBuilder(
+            applicationContext, DiseaseDatabase::class.java, "Disease_Database"
+        ).build()
+        GlobalScope.launch {
+            DiseaseObject.listData = database.dao().getDiseases() as MutableList<DiseaseInfo>
+        }
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN

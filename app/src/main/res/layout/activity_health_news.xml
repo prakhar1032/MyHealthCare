@@ -28,5 +28,11 @@
         android:layout_height="match_parent"
         android:layout_marginTop="35dp"
         tools:listitem="@layout/display_news" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </ProgressBar>
 
 </FrameLayout>

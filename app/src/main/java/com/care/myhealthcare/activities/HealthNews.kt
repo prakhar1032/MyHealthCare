@@ -77,7 +77,7 @@ class HealthNews : AppCompatActivity(),Listener {
             override fun onFailure(call: Call<NewsX>, t: Throwable) {
                 Log.d("main", "onFailure: ${t.message}")
                 Toast.makeText(applicationContext, "${t.message}", Toast.LENGTH_LONG).show()
-
+                progressBar.visibility = View.VISIBLE
 
             }
 
